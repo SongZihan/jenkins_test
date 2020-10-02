@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World12"}
+    return 'jenkins test succefully~'
 
 
 if __name__ == '__main__':
