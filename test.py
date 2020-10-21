@@ -1,4 +1,4 @@
 import pytest
 
 def test_jenkins():
-    assert type('a') == int
+    assert type('a') == str
