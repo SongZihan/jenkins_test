@@ -3,7 +3,13 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'pytest test.py'
+        ws(dir: '/tmp/test') {
+          sh '''python -m venv test_jenkins
+source test_jenkins/bin/activate
+pip install -r requirements.txt
+pytest test.py'''
+        }
+
       }
     }
 
