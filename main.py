@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return 'jenkins test succefully~'
+    return 'jenkidns test succefully~'
 
 
 if __name__ == '__main__':
